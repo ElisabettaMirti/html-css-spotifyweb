@@ -9,9 +9,9 @@ body{
     color: white;
 }
 
-ul>li{
-    list-style-type: none;
-}
+
+
+/* ASIDE */
 
 div.container{
     display: flex;
@@ -24,9 +24,28 @@ aside{
     z-index: 1;
 }
 
+ul>li{
+    list-style-type: none;
+}
+
+
+
 li>img{
     height: 1rem;
 }
+
+.logo{
+    height: 6vh;
+    margin: .8rem;
+}
+
+.logo>img{
+    height: 100%;
+}
+
+
+
+
 
 div.upgrade {
     /* position: fixed; */
