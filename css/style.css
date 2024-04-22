@@ -67,7 +67,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 80vw;
+    width: 100%;
 }
 
 div.upgrade{
@@ -93,25 +93,19 @@ div.upgrade>button{
     }
 
 
-header>nav{
+header ul{    
+    margin-top: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-header ul{
-        width: 100vw;
-        margin-top: 10vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #a3a3a3;
-        text-transform: uppercase;
-        font-size: .8rem;
+    flex-wrap: wrap;
+    color: #a3a3a3;
+    text-transform: uppercase;
+    font-size: .7rem;
 }
 
 header li{
-    padding: 1rem;
+    margin: 1rem;
 }
 
 
