@@ -20,18 +20,31 @@ div.container{
 
 aside{
     background-color: black;
+    color: #a3a3a3;
     width: 20vw;
+    height: 100vh;
     z-index: 1;
+}
+
+aside>nav>ul{
+    margin-bottom: 1.5rem;
 }
 
 ul>li{
     list-style-type: none;
 }
 
-
-
 li>img{
     height: 1rem;
+}
+
+#mobile-logo{
+    display:none;
+    height: 1rem;
+}
+
+#standard-logo{
+    height: 100%;
 }
 
 .logo{
@@ -39,19 +52,18 @@ li>img{
     margin: .8rem;
 }
 
-.logo>img{
-    height: 100%;
-}
 
 
 
 
 
 div.upgrade {
-    /* position: fixed; */
+    position: fixed;
+    top: 0;
     width: 100vw;
     height: 10vh;
     padding: .8rem 1rem 1rem;
+    background-color: #0000008b;    
 }
 
 div.upgrade>button{
@@ -71,11 +83,6 @@ main{
     background-color: #141922;    
 }
 
-main>header{    
-    background-color: #0000008b;
-    
-    
-}
 
 
 
@@ -85,3 +92,25 @@ main>header{
 
 
 /* MEDIA QUERIES */
+
+@media screen and (max-width: 991px){
+    
+}
+
+
+@media screen and (max-width: 767px){
+
+}
+
+@media screen and (max-width: 575px){
+    #mobile-logo{
+        display: inline-block;
+    }
+
+    #standard-logo,
+    aside span,
+    ul.playlist{
+        display: none;
+    }
+
+}
