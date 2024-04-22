@@ -6,4 +6,58 @@
 
 body{
     font-family: "Montserrat", sans-serif;
+    color: white;
 }
+
+ul>li{
+    list-style-type: none;
+}
+
+header{
+    background-color: black;
+}
+
+li>img{
+    height: 1rem;
+}
+
+div.upgrade {
+    /* position: fixed; */
+    width: 100vw;
+    height: 10vh;
+    padding: .8rem 1rem 1rem;
+}
+
+div.upgrade>button{
+    border: 1px solid white;
+    border-radius: 5rem;
+    background-color: transparent;
+    text-transform: uppercase;
+    color: white;
+    padding: .5rem 1.5rem;
+    font-size: .7rem;
+    margin-right: 1rem;
+    position: absolute;
+    right: 0;    
+    }
+
+main{
+    background-color: #141922;
+    display: flex;
+    flex-direction: column;
+}
+
+main>header{    
+    background-color: #0000008b;
+    
+    width: 20vw;
+}
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES */
