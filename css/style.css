@@ -136,6 +136,7 @@ div.profile>span{
 main{
     width: calc(100% - 190px);
     display: flex;
+    flex-direction: column;
     background-color: #141922;
     overflow: scroll;  
 }
@@ -193,6 +194,49 @@ li>hr{
     border: 1px solid #99e22d;
     margin: 3px auto 0;
 }
+
+
+/* SECTION RECENTLY PLAYED */
+
+section.recently-played{
+    padding: 2rem;
+}
+
+h1{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+div.albums{
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: center;
+}
+
+div.song{
+    width: calc((100vw / 8) - 1rem);
+}
+
+div.song>img{
+    width: 100%;
+    margin-bottom: .5rem;
+}
+
+div.song>p.song-title{
+    font-size: .8rem;
+    font-weight: 700;
+    margin-bottom: .3rem;
+}
+
+div.song>p.song-author{
+    font-size: .7rem;
+    font-weight: 700;
+    color: #a3a3a3;
+}
+
 
 
 
