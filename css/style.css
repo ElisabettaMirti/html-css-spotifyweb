@@ -260,9 +260,79 @@ footer{
     background-color: #282828;
     position: fixed;
     bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
+div.now-listening{
+    height: 100%;
+    padding: .8rem .5rem;
+    display: flex;
+}
 
+div.now-listening>img{
+    height: 100%;
+}
+
+div.now-listening>i{
+    font-size: 1rem;
+}
+
+div.playing-song{
+    display: flex;
+    flex-direction: column;
+}
+
+div.playing-song ul{
+    display: flex;
+    justify-content: center;
+}
+
+div.playing-song ul>li{
+    padding: .5rem;
+}
+
+div.progress-bar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.bar.listening{
+    width: calc((100vw / 3) - 2rem);
+    background-color: #5a5a5a;
+}
+
+.bar{
+    height: 2px;
+    border-radius: 2px;
+}
+
+div.bar.done{
+    width: 25%;
+    background-color: #c1c1c1;
+}
+
+div.options ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+div.options ul>li{
+    padding: .5rem;
+}
+
+div.bar.volume{
+    width: 60px;
+    background-color: #5a5a5a;
+}
+
+div.bar.volume-up{
+    width: 20%;
+    background-color: #c1c1c1;
+}
 
 
 
