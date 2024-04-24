@@ -199,7 +199,7 @@ li>hr{
 /* SECTION RECENTLY PLAYED */
 
 section.recently-played{
-    padding: 2rem;
+    padding: 2rem 1rem;
 }
 
 h1{
@@ -211,36 +211,57 @@ div.albums{
     max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
     align-items: flex-start;
     text-align: center;
 }
 
-div.song{
-    width: calc((100vw / 8) - 1rem);
+article.song{
+    width: calc((100vw / 6) - 3rem);
+    margin-right: .5rem;
 }
 
-div.song>img{
+article.song>div.song-cover{
     width: 100%;
+    height: calc((100vw / 6) - 3rem);
     margin-bottom: .5rem;
+    background-size: contain;
 }
 
-div.song>p.song-title{
+article.song>p.song-title{
     font-size: .8rem;
     font-weight: 700;
     margin-bottom: .3rem;
 }
 
-div.song>p.song-author{
+article.song>p.song-author{
     font-size: .7rem;
     font-weight: 700;
     color: #a3a3a3;
 }
 
+#metalmix{
+    background-image: url(../img/metal_lifting.jpeg);
+}
 
+#strang{
+    background-image: url(../img/stranger.jpeg);
+}
 
+#quiet{
+    background-image: url(../img/aquietplace.jpeg);
+}
 
+#split{
+    background-image: url(../img/split.jpeg);
+}
 
+#cure{
+    background-image: url(../img/cure.jpeg);
+}
+
+#sinister{
+    background-image: url(../img/sinister.jpeg);
+}
 
 
 
