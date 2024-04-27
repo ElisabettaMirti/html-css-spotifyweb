@@ -22,7 +22,7 @@ header{
     background-color: black;
     color: #a3a3a3;
     width: 190px;
-    height: 100vh;
+    height: calc(100vh - 75px);
     position: relative;
 }
 
@@ -92,7 +92,7 @@ div.bottom-header{
     position: absolute;
     bottom: 0;
     left: 1.1rem;
-    padding-bottom: 90px;
+    padding-bottom: 10px;
 }
 
 div.app-install{
@@ -279,8 +279,6 @@ footer{
     width: 100vw;
     height: 75px;
     background-color: #282828;
-    position: fixed;
-    bottom: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
