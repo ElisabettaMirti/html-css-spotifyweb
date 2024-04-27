@@ -181,11 +181,11 @@ div.upgrade>button{
     padding: .6rem 2rem .7rem;
     font-size: .64rem;
     font-weight: 600;
-    }
+}
 
-    div.upgrade>button:hover{
-        font-size: .72rem;
-    }
+div.upgrade>button:hover{
+    font-size: .72rem;
+}
 
 
 .top-main ul{    
@@ -198,11 +198,12 @@ div.upgrade>button{
     text-transform: uppercase;
     font-size: .65rem;
     font-weight: bold;
-    padding-top: .7rem;
+    padding: .7rem 5rem;
 }
 
 .top-main li{
     margin: .65rem;
+    padding-top: .3rem;
 }
 
 li>hr{
@@ -500,23 +501,126 @@ div.pallino{
 /* MEDIA QUERIES */
 
 @media screen and (max-width: 991px){
-    
+    .top-main ul{
+        padding: .7rem 3rem;
+    }
+
+    article.song{
+        width: calc((100vw / 4) - 5rem);
+        margin-bottom: 2rem;
+    }
+
+    article.song>div.song-cover{
+        width: 100%;
+        height: calc((100vw / 4) - 5rem);
+        margin-bottom: .5rem;
+    }
 }
 
 
 @media screen and (max-width: 767px){
 
+    .top-main li {
+        margin: .7rem;
+    }
+
+    article.song{
+        width: calc((100vw / 2) - 9rem);
+        margin-bottom: 2rem;
+    }
+
+    article.song>div.song-cover{
+        width: 100%;
+        height: calc((100vw / 2) - 9rem);
+        margin-bottom: .5rem;
+    }
+
+    section{
+        padding: 2rem 2rem;
+    }
+
+    div.song-options{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding: .3rem;
+    }
+
+
 }
 
+
 @media screen and (max-width: 575px){
+
+    header{
+        width: 50px;
+    }
+
+    div.upgrade{
+        width: calc(100% - 50px);
+    }
+
+    div.bottom-header{
+        left: .75rem;
+    }
+
+    .top-main ul{
+        padding: .7rem 1.5rem;
+    }
+
+    .top-main li {
+        margin: .4rem;
+    }
+
+    main{
+        width: calc(100% - 50px);
+    }
+
+    section{
+        padding: 2rem 1rem;
+    }
+
+    article.song{
+        width: calc((100vw / 2) - 3.2rem);
+        margin-bottom: 2rem;
+    }
+
+    article.song>div.song-cover{
+        width: 100%;
+        height: calc((100vw / 2) - 3.2rem);
+        margin-bottom: .5rem;
+    }
+
     #mobile-logo{
         display: inline-block;
     }
 
     #standard-logo,
-    aside span,
+    header span,
+    div.app-install,
+    .bottom-header>hr,
     ul.playlist{
         display: none;
+    }
+
+    div.progress-bar > span{
+        margin: 0 .5rem;
+    }
+
+    div.bar.volume{
+        width: 40px;
+    }
+
+    div.song-options{
+        padding: .5rem .8rem .5rem 0;
+    }
+
+    div.options ul > li {
+        padding: .2rem;
+    }
+
+    div.now-listening-info {
+        padding-right: 0;
     }
 
 }
