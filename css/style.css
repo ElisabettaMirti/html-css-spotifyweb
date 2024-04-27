@@ -135,6 +135,7 @@ div.profile>span{
 
 main{
     width: calc(100% - 190px);
+    height: calc(100vh - 75px);
     display: flex;
     flex-direction: column;
     background-color: #141922;
@@ -198,14 +199,14 @@ li>hr{
 
 /* SECTION RECENTLY PLAYED */
 
-section.recently-played{
+section{
     padding: 2rem 1rem;
 }
 
 h1{
     font-size: 1.2rem;
-    margin-bottom: 1.5rem;
 }
+
 
 div.albums{
     max-width: 100%;
@@ -213,6 +214,7 @@ div.albums{
     flex-wrap: wrap;
     align-items: flex-start;
     text-align: center;
+    margin-top: 1.5rem;
 }
 
 article.song{
@@ -264,6 +266,23 @@ article.song>p.song-author{
 }
 
 
+
+/* SECTION FOR-YOU */
+
+p.suggestion{
+    font-size: .6rem;
+    font-weight: 700;
+    color: #808080;
+    margin-top: .5rem;
+}
+
+#radar{
+    background-image: url(../img/radar.jpeg);
+}
+
+#daily-mix{
+    background-image: url(../img/mixdaily.jpeg);
+}
 
 
 
