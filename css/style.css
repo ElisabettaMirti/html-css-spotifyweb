@@ -286,6 +286,21 @@ p.suggestion{
 
 
 
+/* SECTION MOST POPULAR */
+
+#youg{
+    background-image: url(../img/youg.jpeg);
+}
+
+#einaudi{
+    background-image: url(../img/einaudi.jpeg);
+}
+
+.circle{
+    border-radius: 50%;
+}
+
+
 
 
 
