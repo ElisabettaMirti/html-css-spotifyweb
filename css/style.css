@@ -23,7 +23,9 @@ header{
     color: #a3a3a3;
     width: 190px;
     height: calc(100vh - 75px);
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header ul.main-nav{
@@ -94,9 +96,7 @@ ul.playlist>li{
 }
 
 div.bottom-header{
-    position: absolute;
-    bottom: 0;
-    left: 1.1rem;
+    margin-left: 1.1rem;
     padding-bottom: 10px;
 }
 
@@ -184,7 +184,7 @@ div.upgrade>button{
 }
 
 div.upgrade>button:hover{
-    font-size: .72rem;
+    transform: scale(1.1);
 }
 
 
@@ -451,12 +451,12 @@ div.bar.done{
     align-items: center;
 }
 
-div.bar.done:hover,
-div.bar.volume-up:hover{
+div.bar.listening:hover .bar.done,
+div.bar.volume:hover .bar.volume-up{
     background-color: #99e22d;
 }
 
-div.bar.done:hover div.pallino{
+div.bar:hover div.pallino{
     display: block;
 }
 
